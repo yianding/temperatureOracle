@@ -5,8 +5,13 @@
 
 ### 數據格式
 任何上傳的數據，都採用兩部分，label,value。label是數據的標籤，value是一個uint256的大整數。
-比如:要做上證的收盤價格指數: label 可以是:{'20220602','Shanghai SE Composite Index'},value:230098
+
+比如:要做上證的收盤價格指數
+
+label 可以是:{'20220602','Shanghai SE Composite Index'},value:230098
+
 含義：2022年6月2日，上證指數，2300.98點
 
 上傳數據接口： PostOracleData(string label,uint256 value)
+
 獲取數據接口:  GetOracleData(string label) public view 
